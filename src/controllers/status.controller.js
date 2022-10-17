@@ -12,6 +12,7 @@ async function serverStatus(req, res) {
         return sendStatus(200);
 
     } catch (error) {
+        console.log(error);
         return res.sendStatus(404);
     }
 }
